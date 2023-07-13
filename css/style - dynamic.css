@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+/* New Page 2 section css start  */
+html {
+scroll-behavior: smooth;
+overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    background: #000;
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(-45deg, #00FFF7, #FF0077);
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    border-radius: 5px;
+}
+.parallax-sec .parallax-item {
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+font-family: Montserrat, sans-serif;
+width: 100%;
+min-height: 100vh;
+position: relative;
+}
+
+.parallax-sec .parallax-item h2 {
+font-size: 3rem;
+text-transform: uppercase;
+background-color: whitesmoke;
+padding: 1rem;
+border-radius: 1rem;
+}
+.parallax-sec .parallax-item ul {
+    z-index: 9999;
+}
+.parallax-sec .parallax-item ul li h1 {
+color: #fff !important;
+font-family: 'Raleway';
+/* background-color: #000; */
+text-align: center;
+margin: 0vw 0;
+font-size: 90px;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 900;
+}
+.parallax-sec .parallax-item ul li:nth-child(1) h1 {
+background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+
+}
+.parallax-sec .parallax-item ul li:nth-child(3) h1 {
+background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+
+}
+.parallax-sec .parallax-item ul li:nth-child(2) h1 {
+background-color: #FFE53B;
+background-image: linear-gradient(90deg, #FFE53B 0%, #FF2525 74%);
+
+}
+.parallax-sec .parallax-item ul li:nth-child(4) h1 {
+background-color: #FAACA8;
+background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
+}
+
+.parallax-sec .parallax-item:nth-child(1) {
+/* background-image: url(https://source.unsplash.com/Im7lZjxeLhg);
+background-size: cover;
+background-position: center; */
+background: transparent;
+}
+.parallax-sec .parallax-item video {
+position: absolute;
+top: 0;
+width: 100%;
+}
+.parallax-sec .parallax-item:nth-child(2) {
+background: url("../img/light-ui.jpg");
+background-size: cover;
+background-position: center bottom;
+background-attachment: fixed; /* Parallax Effect for DIV 3 */
+min-height: 1000px;
+/* border: 2px solid red; */
+position: relative;
+}
+.parallax-sec .parallax-item .p-img-box1 {
+    /* border: 1px solid red; */
+width: 500px;
+height: 300px;
+position: absolute;
+top: 20vw;
+left: 3vw;
+background: url("../img/outdoors.jpg");
+background-size: cover;
+background-position: center bottom;
+box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.7) 0px 30px 60px -30px;
+}
+.parallax-sec .parallax-item .p-img-box2 {
+    /* border: 1px solid blue; */
+width: 700px;
+height: 500px;
+position: absolute;
+bottom: 7vw;
+right: 5vw;
+background: url("../img/hoverex.jpg");
+background-size: cover;
+background-position: top;
+box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.7) 0px 30px 60px -30px;
+}
+.parallax-sec .parallax-item:nth-child(3) {
+background: url("../img/dark-ui.jpg");
+background-size: cover;
+background-position: center -100px;
+justify-content: start;
+}
+.parallax-sec .parallax-item:nth-child(3) h1 {
+/* border: 1px solid red; */
+width: 60%;
+color: #fff !important;
+font-size: 60px;
+background-color: rgba(255,255,255,0.2);
+backdrop-filter: blur(8px);
+padding: 3vw;
+margin-left: 3vw;
+border-radius: 30px;
+/* background-color: #FA8BFF; */
+/* -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-image: -webkit-linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+background-image: -moz-linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+background-image: -o-linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%); */
+
+}
+
+.dark-bg-1 {
+width: 100%;
+height: 100vh;
+/* border: 1px solid red; */
+background-image: url('../img/ram-img.jpg');
+background-size: 100%;
+background-position: center;
+margin: 8vw 0;
+position: relative;
+display: flex;
+justify-content: start;
+align-items: end;
+}
+.dark-bg-1 .bg-overlay {
+width: 100%;
+height: 10vw;
+/* border: 1px solid blue; */
+background: linear-gradient(180deg, #000000fa 30%, #0000007d 75%, transparent 100%);
+position: absolute;
+}
+.dark-bg-1 .bg-overlay:nth-child(1) {
+top: 0;
+}
+.dark-bg-1 .bg-overlay:nth-child(2) {
+bottom: 0;
+transform: rotate(180deg);
+}
+.dark-bg-1 .bg-text-box-1 {
+/* border: 1px solid greenyellow; */
+width: 30vw;
+height: 30vw;
+/* padding: 0 8vw; */
+margin: 5vw;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+animation: reveal-txt 5s ease-in;
+}
+.dark-bg-1 .bg-text-box-1 h2 {
+color: rgba(255,255,255,0.8);
+text-transform: capitalize;
+width: 30vw;
+}
+.dark-bg-1 .bg-text-box-1 p {
+color: rgba(255,255,255,0.7) !important;
+width: 30vw;
+}
+@keyframes reveal-txt {
+0% {
+    width: 0;
+    opacity: 0;
+}
+100% {
+    width: 30vw;
+    opacity: 1;
+}
+}
+
+.dark-bg-2 {
+width: 100%;
+/*height: 100vh;*/
+margin-bottom: 5vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: #000;
+}
+.dark-bg-2 .bg-img-box1  {
+/* border: 1px solid red; */
+width: 70%;
+position: relative;
+}
+.dark-bg-2 .bg-img-box1 .hyper-img {
+z-index: 2;
+position: relative;
+}
+.dark-bg-2 .bg-img-box1 .hyper-shadow {
+position: absolute;
+top: 0vw;
+top: 3vw;
+scale: 1.5;
+}
+.bg-text-box-2 {
+/* border: 1px solid blue; */
+width: 70%;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+margin-top: 2vw;
+}
+.bg-text-box-2 h2 {
+width: 40%;
+color: rgba(255,255,255,0.8);
+font-family: 'Montserrat';
+}
+.bg-text-box-2 p {
+width: 65%;
+color: rgba(255,255,255,0.7) !important;
+font-family: 'Montserrat';
+}
+.dark-bg-3 {
+height: auto;
+margin: 5vw 0;
+}
+.bg-img-box2 {
+height: 40vw;
+background-image: url('../img/user-ex.jpg');
+background-size: cover;
+background-position: center;
+}
+.experi {
+margin: 15vw 0;
+position: relative;
+}
+.experi h1 {
+color: #fff !important;
+transform: rotate(-90deg);
+position: absolute;
+/* border: 1px solid red; */
+top: 9vw;
+left: 8vw;
+letter-spacing: 2vw;
+font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+}
+.experi .glock {
+position: relative;
+padding: 20px;
+/* border: 1px solid red; */
+margin-left: 30vw;
+}
+.experi .piece:not(.base) {
+position: absolute;
+bottom: 17.5vw;
+}
+.experi .slide {
+width: 30vw;
+left: 3.5vw;
+}
+.experi .barrel {
+width: 16vw;
+left: 4.5vw;
+}
+.experi .spring {
+width: 12vw;
+left: 4.5vw;
+}
+.experi .base {
+width: 30vw;
+position: relative;
+left: 3vw;
+z-index: 1;
+}
+.g-words {
+color: #ffffffe3;
+font-size: 15px;
+font-weight: bold;
+font-family: 'Montserrat';
+}
+.g-design {
+left: 25vw !important;
+bottom: 2vw !important;
+}
+
+.horri-scroll {
+overscroll-behavior: none;
+width: 600vw;
+height: 100vh;
+display: flex;
+flex-wrap: nowrap;
+/* border: 1px solid red; */
+}
+.horri-scroll .panel {
+width: 100vw;
+height: 50vw;
+display: flex;
+justify-content: center;
+align-items: center;
+    border: none; 
+background-image: none;
+}
+.horri-scroll .panel.p-one,.horri-scroll .panel.p-two {
+background-color: transparent;
+}
+.horri-scroll .panel.p-one .box-one-left {
+width: 50%;
+height: 80%;
+/* border: 1px solid magenta; */
+position: relative;
+}
+.horri-scroll .panel.p-one .box-one-left img:nth-child(1) {
+width: 40%;
+}
+.horri-scroll .panel.p-one .box-one-left img:nth-child(2) {
+width: 50%;
+position: absolute;
+right: 2%;
+top: 10%;
+}
+.horri-scroll .panel.p-one .box-one-right {
+width: 50%;
+height: 80%;
+/* border: 1px solid blue; */
+position: relative;
+}
+.horri-scroll .panel.p-one .box-one-right img {
+width: 70%;
+position: absolute;
+left: 20%;
+top: 20%;
+}
+.horri-scroll .panel.p-two .box-one-left {
+width: 50%;
+height: 80%;
+/* border: 1px solid magenta; */
+position: relative;
+}
+.horri-scroll .panel.p-two .box-one-left img {
+width: 60%;
+position: absolute;
+right: 10%;
+top: 15%;
+}
+.horri-scroll .panel.p-two .box-one-right img {
+width: 70%;
+margin-left: 5vw;
+}
+.horri-scroll .panel h2 {
+color: rgba( 255, 255, 255, 0.6 );
+font-family: 'Montserrat';
+font-size: 30px;
+padding: 0 3vw;
+}
+/* New Page 2 section css end  */
